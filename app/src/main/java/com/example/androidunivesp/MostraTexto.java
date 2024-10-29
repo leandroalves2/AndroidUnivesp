@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 
-public class Tela2 extends AppCompatActivity {
+public class MostraTexto extends AppCompatActivity {
 
     // String para armazenamento da mensagem recebida da primeira tela
     private String mensagem;

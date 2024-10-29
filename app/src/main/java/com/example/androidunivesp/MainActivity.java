@@ -1,6 +1,7 @@
 package com.example.androidunivesp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -33,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Associando a variavel mensagemInserida do java com o componente editText do arquivo XML
         mensagemInserida = findViewById(R.id.editTextXML);
+    }
 
+    public void meuClick(View e) {
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"));
+        startActivity(myIntent);
 
     }
 
@@ -44,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mensagem = mensagemInserida.getText().toString();
 
         // criaçao da Intent para chamada da segunda tela com envio da mensagem
-        Intent myIntent = new Intent(this, Tela2.class);
+        Intent myIntent = new Intent(this, MostraTexto.class);
 
         // uso do metodo putExtra para envio da mensagem
         myIntent.putExtra("mensagemEnviada", mensagem);

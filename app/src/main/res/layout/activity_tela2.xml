@@ -8,7 +8,7 @@
     android:background="#FDCECB"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Tela2">
+    tools:context=".MostraTexto">
 
     <TextView
         android:id="@+id/mensagemRecebidaXML"

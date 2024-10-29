@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AndroidUnivesp"
         tools:targetApi="31">
         <activity
-            android:name=".Tela2"
+            android:name=".MostraTexto"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
