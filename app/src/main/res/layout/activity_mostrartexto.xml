@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDCECB"
+    android:background="@drawable/lua"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MostraTexto">
@@ -14,8 +14,20 @@
         android:id="@+id/mensagemRecebidaXML"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
         android:text="TextView"
-        android:textColor="#762424"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="#EEC394"
+        android:onClick="voltar"
+        android:text="voltar"
+        android:textColor="#BF9064"
+        android:textColorLink="#E20707" />
 </LinearLayout>

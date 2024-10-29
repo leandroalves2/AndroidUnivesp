@@ -36,12 +36,6 @@ public class MainActivity extends AppCompatActivity {
         mensagemInserida = findViewById(R.id.editTextXML);
     }
 
-    public void meuClick(View e) {
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"));
-        startActivity(myIntent);
-
-    }
-
     //metodo para enviar a mensagem para a proxima tela
     public void diaparaNovaTela(View v) {
 
@@ -56,5 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
         // envio da solicitacao
         startActivity(myIntent);
+    }
+
+    public void meuClick(View e) {
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"));
+        startActivity(myIntent);
+
     }
 }
